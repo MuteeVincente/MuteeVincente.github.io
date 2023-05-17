@@ -1,5 +1,6 @@
 /* Common Styles */
 body{
+    justify-content: center;
     display: flex;
     align-items: center;
 }
