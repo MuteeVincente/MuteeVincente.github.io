@@ -69,7 +69,14 @@ body{
         margin-bottom: 10px;
     }
 }
-
+ul{
+    list-style: none;
+}.headertext p{
+    color: antiquewhite;
+}
+.experience p{
+    color: rgb(254, 2, 204);
+}
 /* Styles for all screens */
 /* Add your own styles here */
 
