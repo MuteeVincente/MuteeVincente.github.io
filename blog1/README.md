@@ -7,7 +7,7 @@
 
 Vincent Mutethia  
 Student at Jomo Kenyatta University of Agriculture and Technology  
-1 article  
+
 May 17, 2023  
 
 This May-August, I am embarking on my first internship, and I am thrilled by the opportunities it presents for my career aspirations. I am fully aware that this internship goes beyond fulfilling academic requirements. It offers a chance to acquire industry-relevant skills, explore certifications, and establish a strong professional foundation. As I embark on this exciting journey, my mission is clear: to achieve the following key objectives.
