@@ -1,8 +1,14 @@
 /* Common Styles */
+
+h2,h1,h3,h4{
+    color: chartreuse;
+}
 body{
     justify-content: center;
     display: flex;
     align-items: center;
+    background-color: black; 
+    color: aquamarine;   
 }
 .container {
     max-width: 900px;
@@ -55,6 +61,7 @@ body{
     .soft-skills {
         width: 100%;
         margin-bottom: 20px;
+        
     }
 
     .contacts a {
