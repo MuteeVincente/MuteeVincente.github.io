@@ -1,239 +1,150 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <title>Vincent Mutethia</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-		<style>
-		/* Main Styling */
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: #fcf9f9;
-  background-color: #171414;
-  text-align: center;
-  line-height: 1.4em;
-  margin: 0;
-  height: 100%;
-}
+<head>
+	<style>
+	/* Common Styles */
 
+h2,h1,h3,h4{
+    color: chartreuse;
+}
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: black; 
+    color: aquamarine;   
+}
 .container {
-  padding: 0;
-  background-color: rgb(29, 29, 36);
-  border-radius: 30px;
-  border: solid;
-  border-color: rgb(9, 8, 8);
-  max-width: 100%;
-  margin: 0;
-  min-height: 100%;
-  flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .header {
-  max-height: fit-content;
-  display: flex;
-  background-color: rgb(46, 46, 71);
-  justify-content: center;
-  border-radius: 40px;
-  border: solid;
-  border-color: rgb(0, 255, 123);
-  margin: 30px;
-  padding: 20px;
-  
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
 .headertext {
-  margin-left: 20px;
-}
-
-.headertext h2 {
-  margin-top: 0;
-}
-
-img.profile {
-  border-radius: 50%;
-  max-width: 100%;
-  height: auto;
-}
-
-.whole {
-  flex: 1;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 30px;
+    flex: 1;
 }
 
 .title {
-  margin-top: 30px;
-}
-
-
-
-.skills > div {
-  margin: 10px;
-  flex: 1;
-  min-width: 150px;
-  max-width: 300px;
-}
-.skills{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-}
-.technology-skills,
-.framework-skills,
-.soft-skills {
-  background-color: rgb(144, 209, 209);
-  color: black;
-  border-radius: 20px;
-  font-size: 14px;
-  padding: 10px;
-  text-align: center;
-}
-
-.technology-skills:hover,
-.framework-skills:hover,
-.soft-skills:hover {
-  animation: bubble 0.5s ease-out forwards;
-}
-
-.footer {
-  margin-top: 20px;
-}
-
-/* Media queries */
-@media screen and (min-width: 576px) {
-  .whole {
-    flex-direction: column;
-  }
-  
-  .experience {
-    flex: 2;
-    margin-right: 30px;
-    margin-bottom: 0;
-  }
-  
-  .skills {
-    flex: 1;
     margin-top: 30px;
-    margin-bottom: 0;
-  }
 }
 
-@media screen and (min-width: 992px) {
-  .container {
-    flex-direction: row;
-  }
-  
-  .header {
-    margin: 30px 0;
-    padding: 30px;
-  }
-  
-  .skills {
-    flex-wrap: nowrap;
-  }
-  
-  .technology-skills,
-  .framework-skills,
-  .soft-skills {
-    min-width: 200px;
-    max-width: none;
-  }
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Styles for screens smaller than 768px (e.g., mobile) */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile {
+        margin-bottom: 10px;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .technology-skills,
+    .framework-skills,
+    .soft-skills {
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+
+    .contacts a {
+        display: block;
+        margin-bottom: 10px;
+    }
 }
+ul{
+    list-style: none;
+}.headertext p{
+    color: antiquewhite;
+}
+.experience p{
+    color: rgb(254, 2, 204);
+}
+/* Styles for all screens */
+/* Add your own styles here */
 
 
+	</style>
+    <title>Vincent Mutethia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="loading">
+    <div class="container">
+        <div class="header">
+            <img src="./9pyedx.jpg" height="100px" width="100px" class="profile">
+            <div class="headertext">
+                <h2>Vincent Mutethia</h2>
+                <p>Computer Science  Student</p>
+                <p>JKUAT Kenya</p>
 
-        </style>
-	</head>
-	<body class="loading">
-		<div class="container">
-		<div class="header">
-			<img src="./9pyedx.jpg" height="100px" width="100px" class ="profile">
-			<div class="headertext">
-				<h2>Vincent Mutethia</h2>
-				<p></p>Software Engineer</p>
-			</div>
-
-    </div>
-		<div class="whole">
-			<div class="experience">
-				<h3 class="title"><i><strong>ABOUT</strong></i></h3>
-				<p id="line1"><b></b></p>
-				<p id="line2"></p>
-			  </div>
-			  
-			  <script>
-				window.addEventListener('load', function () {
-				  writeLine(1, "I'm a Computer Science Student in Jomo Kenyatta University of Agriculture and Technology(Upto 2025)", function() {
-					// Callback function to start writing the second line after the first one is complete
-					writeLine(2, "My current Focus is on back-end development and CyberSecurity.");
-				  });
-				});
-			  
-				function writeLine(lineNum, text, callback) {
-				  var i = 0;
-				  var interval = setInterval(function() {
-					if (i < text.length) {
-					  document.getElementById("line" + lineNum).innerHTML += text.charAt(i);
-					  i++;
-					} else {
-					  clearInterval(interval);
-					  // call the callback function after the line is complete
-					  if (callback) {
-						setTimeout(callback, 1000);
-					  }
-					}
-				  }, 50);
-				}
-			  </script>
-			  
-			
-			<h3><i>SKILLS</i></h3>
-			<div class="skills">
-
-				<div class="technology-skills">
-				  <h4><i>TECHNOLOGY</i></h4>
-				  This is what I use to code
-				  
-				  <div class="languages">
-
-				  <ul>
-					<li><i class="fab fa-html5"></i> HTML5</li>
-					<li><i class="fab fa-css3"></i> CSS3</li>
-					<li><i class="fab fa-js"></i> JavaScript</li>
-				  </ul>
-				</div>
-
-				</div>
-				<div class="framework-skills">
-				  <h4><i>FRAMEWORK</i></h4>
-				  <ul>
-					<li><i class="fab fa-react"></i> React</li>
-					<li><i class="fab fa-php"></i>PHP</li>
-					<li><i class="fab fa-python"></i>Python</li>
-				  </ul>
-				</div>
-				<div class="soft-skills">
-				  <h4><i>SOFT SKILLS</i></h4>
-				  <ul>
-					<li><i class="fas fa-check"></i> Problem-solving</li>
-					<li><i class="fas fa-users"></i> Team Work</li>
-					<li><i class="fas fa-exchange-alt"></i> Flexibility</li>
-				  </ul>
-				</div>
-			  </div
-			  <h4 class="title"><i><strong>CONTACTS</strong></i></h4>
-			  <div class="contacts">
-				<a href="https://twitter.com/MuteeVincente" target="_blank"><i class="fab fa-twitter"></i> Twitter</a><br />
-				<a href="https://www.linkedin.com/in/vincent-mutethia-8b265b212/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a><br />
-				<a href="mailto:vinniemutee@gmail.com"><i class="fas fa-envelope"></i> Email</a><br />
-			  </div>
-			</div>
-		</div>
-		
+            </div>
         </div>
+        <div class="whole">
+            <div class="experience">
+                <h3 class="title"><i><strong>ABOUT</strong></i></h3>
+                <p>I'm a Computer Science Student now going to the 3rd year in Jomo Kenyatta University of Agriculture and Technology. </p> 
+                <p>I do Web-developement both on Client-side and Back-end.</p> 
+                <p>Always eager to learn and improve my skills in programming.</p>
 
-	</body>
+
+            </div>
+            <script src="script.js"></script>
+            <div class="skills">
+                <div class="technology-skills">
+                    <h4><i>TECHNOLOGY</i></h4>
+                    <div class="languages">
+                        <ul>
+                            <li><i class="fab fa-html5"></i> HTML5</li>
+                            <li><i class="fab fa-css3"></i> CSS3</li>
+                            <li><i class="fab fa-js"></i> JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="framework-skills">
+                    <h4><i>FRAMEWORK</i></h4>
+                    <ul>
+                        <li><i class="fab fa-react"></i> React</li>
+                        <li><i class="fab fa-php"></i> PHP</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                    </ul>
+                </div>
+                <div class="soft-skills">
+                    <h4><i>SOFT SKILLS</i></h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Problem-solving</li>
+                        <li><i class="fas fa-users"></i> Team Work</li>
+                        <li><i class="fas fa-exchange-alt"></i> Flexibility</li>
+                    </ul>
+                </div>
+            </div>
+            <h4 class="title"><i><strong>CONTACTS</strong></i></h4>
+            <div class="contacts">
+                <a href="https://twitter.com/MuteeVincente" target="_blank"><i class="fab fa-twitter"></i> Twitter</a><br />
+                <a href="https://www.linkedin.com/in/vincent-mutethia-8b265b212/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a><br />
+                <a href="mailto:vinniemutee@gmail.com"><i class="fas fa-envelope"></i> Email</a><br />
+            </div>
+        </div>
+    </div>
+</body>
 </html>
